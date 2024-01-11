@@ -1,4 +1,4 @@
-In this project I visualized data using Amazon Quicksight.
+In this project I visualized data that I imported into S3 buckets using Amazon Quicksight.
 
 The main steps summarized are:
 1. Downloading a dataset of Best-selling amazon products
