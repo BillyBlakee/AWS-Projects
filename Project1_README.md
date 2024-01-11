@@ -1,10 +1,9 @@
-This was a small AWS project which I did for fun.
+This was a small AWS project where I hosted a static website through AWS.
 
 I created an application that used AWS Amplify, DynamoDB, Lambda, IAM and API Gateway.
 The application was a simple math application that had the used input a base number and an exponenet. Then the program would output the answer (8^2 = 64)
 
-The first step in creating the application was creating a small index.html file that would have the front end html and css for the web page. This was quite simple with a couple of input fields, some text and a calculate button. This file had to be zipped
-so I could later drop it into AWS amplify for easy deployment.
+The first step in creating the application was creating a small index.html file that would have the front end html and css for the web page. This was quite simple with a couple of input fields, some text and a calculate button. This file had to be zipped so I could later drop it into AWS amplify for easy deployment.
 
 The next step was to open the AWS Amplify service in my AWS console. I created an app and deployed it without a git provider, then drag and dropped my zip file and manually deployed it.
 
