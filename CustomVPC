@@ -1,0 +1,55 @@
+In this project, I created a custom VPC and launched instances in order to test my VPC. In the VPC there is a CIDR block 10.0.0.0/16, 
+two private subnets and two public subnets across two availability zones. Also there is an internet gateways, a main route table, and a private route table. 
+This would have allowed me to attatch a NAT gateway in the future to allow outbound internet activity.
+
+Here how I created and configured the VPC:
+# Create VPC
+Name: MyVPC
+IPv4 CIDR Block: 10.0.0.0/16
+
+# Create Public Subnets
+
+Name: Public-1A
+Availability Zone: us-east-1a
+IPv4 CIDR Block: 10.0.1.0/24
+
+Name: Public-1B
+Availability Zone: us-east-1b
+IPv4 CIDR Block: 10.0.2.0/24
+
+Name: Private-1A
+Availability Zone: us-east-1a
+IPv4 CIDR Block: 10.0.3.0/24
+
+Name: Private-1B
+Availability Zone: us-east-1b
+IPv4 CIDR Block: 10.0.4.0/24
+
+# Create private route table
+
+Name: Private-RT
+VPC: MyVPC
+Subnet associations: Private-1A, Private-1B
+
+# Create Internet Gateway
+
+Name: MyIGW
+VPC: MyVPC
+
+Once my private route table was created, I associated both of the private subnets. Then lastly I created an internet gateway and attatched it to MyVPC.
+I also attatched the internet gateway to the main route table.
+
+I then launch an amazon linux t2.micro instance in order to test my VPC out. I added HTTP and SSH in bound rules to my security groups to this instance.
+
+I also added this bit of code to the user data to install a web server:
+
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+
+Then I created a second instance to test the private subnet, and confirgure my security group for SSH and ICMP - IPv4.
+
+To test the public subnet I copied the IP address to my browser, beslow are the results:
+
