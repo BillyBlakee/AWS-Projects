@@ -54,5 +54,8 @@ Then I created a second instance to test the private subnet, and confirgure my s
 To test the public subnet I copied the IP address to my browser, Then a page popped up telling me it was working. I was also able to connect via SSH.
 While connected to the instance I was able to ping my private instance to ensure that was working too.
 
+![Capture-1](https://github.com/BillyBlakee/AWS-Projects/assets/151226564/0b02fe9a-0fd1-40aa-8fec-afbecea193f1)
+
+
 
 
