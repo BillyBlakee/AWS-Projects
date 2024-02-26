@@ -52,6 +52,6 @@ systemctl enable httpd
 Then I created a second instance to test the private subnet, and confirgure my security group for SSH and ICMP - IPv4.
 
 To test the public subnet I copied the IP address to my browser, below are the results:
-![Alt text](C:\Capture.PNG=true "Title")
+![Capture](https://github.com/BillyBlakee/AWS-Projects/assets/151226564/9d6fb7b4-f166-4b6a-82dc-5fcffb105235)
 
 
