@@ -2,7 +2,7 @@
 Welcome to my collection of AWS (Amazon Web Services) projects! This repository serves as a showcase and resource for various applications and solutions I've developed using AWS, the world's most comprehensive and broadly adopted cloud platform.
 
 What's Inside
-Each project in this repository demonstrates practical use cases of AWS services, ranging from computing and storage to machine learning and data analytics. Whether you're a beginner looking to understand the basics of cloud computing or an experienced developer seeking advanced implementations, there's something here for everyone.
+Each project in this repository demonstrates practical use cases of AWS services, ranging from computing and storage to machine learning and data analytics.
 
 Goals and Objectives
 The primary goal of this repository is to provide real-world examples of cloud-based solutions using AWS. By sharing these projects, I aim to:
