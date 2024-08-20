@@ -1,4 +1,4 @@
 In this project I am automating EC2 instance management using the AWS CLI
 
 Test
-'aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem`
+`aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem`
