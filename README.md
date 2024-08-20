@@ -6,11 +6,8 @@ Each project in this repository demonstrates practical use cases of AWS services
 
 Goals and Objectives
 The primary goal of this repository is to provide real-world examples of cloud-based solutions using AWS. By sharing these projects, I aim to:
-
 Educate: Help others learn about AWS services and how they can be utilized in various scenarios.
-
 Inspire: Offer ideas and encourage others to innovate and build their own cloud solutions.
-
 Collaborate: Create a community where ideas and knowledge about AWS can be shared and expanded.
 <!-- wp:paragraph -->
 Repository Structure
